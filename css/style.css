@@ -37,9 +37,10 @@ body {
 
 /* ----- CONTENT ----- */
 
-.fixed {
+.fixed-header {
     position: fixed;
     width: 100%;
+    background-color: white;
 }
 
 .container-big {
