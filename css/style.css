@@ -35,5 +35,19 @@ body {
 
 
 
-
 /* ----- CONTENT ----- */
+
+.fixed {
+    position: fixed;
+    width: 100%;
+}
+
+.container-big {
+    background-color: azure;
+}
+
+
+/* DEBUG ----- */
+.debug .container-big {
+    height: 500px;
+}
