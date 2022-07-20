@@ -33,7 +33,21 @@ body {
 
 /* ----- CONTENT ----- */
 
+.barra-navigazione {
+    width: 100%;
+    position: fixed;
+    padding: 10px;
+}
 
+.barra-navigazione a {
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+
+.barra-navigazione span:hover {
+    border-bottom: 1px solid black;
+}
 
 /* ----------- */
 /* DEBUG ----- */
