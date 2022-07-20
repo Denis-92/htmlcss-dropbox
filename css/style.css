@@ -13,10 +13,6 @@ body {
 
 /* ----- UTILITY ----- */
 
-.container {
-    max-width: 1500px;
-    margin: 0 auto;
-}
 
 
 /* Flex */
@@ -37,49 +33,7 @@ body {
 
 /* ----- CONTENT ----- */
 
-.fixed-header {
-    position: fixed;
-    background-color: white;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.container-big {
-    background-color: azure;
-}
-
-footer {
-    background-color: black;
-}
-
-.jumbotron {
-    padding: 50px 300px;
-}
-
-h1 {
-    font-weight: 900;
-    font-size: 50px;
-}
-
-
-.start-button {
-    color: white;
-    background-color: #0061ff;
-    border: 0;
-    padding: 5px 10px;
-    margin: 10px 0;
-}
 
 
 /* ----------- */
 /* DEBUG ----- */
-.debug footer,
-.debug .container-big {
-    height: 500px;
-}
-
-.debug main section {
-    height: 500px;
-    border: 1px solid orange;
-}
