@@ -8,85 +8,43 @@
 
 body {
     font-family: sans-serif;
+    background-color: white;
 }
 
-img {
-    width: 100%;
-}
 
 /* ----- UTILITY ----- */
 
-.pulsante {
-    background-color: #0061ff;
-    color: white;
-    padding: 10px 15px;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-}
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
-.w-25 {
-    width: 25%;
-}
-
-.w-75 {
-    width: 75%;
-}
-
-.pt-90px {
-    padding-top: 90px;
-}
-
-.mt-35px {
-    margin-top: 35px;
-}
 
 /* Flex */
-
-.flex {
-    display: flex;
-}
-
-.space-between {
-    justify-content: space-between;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
 
 
 /* ----- CONTENT ----- */
 
 .barra-navigazione {
-    width: 100%;
     position: fixed;
-    padding: 10px;
-    background-color: white;
+    width: 100%;
 }
 
-.barra-navigazione a {
-    padding-right: 20px;
-    padding-left: 20px;
-
-}
-
-.barra-navigazione span:hover {
-    border-bottom: 1px solid black;
-}
-
-header {
+.container-xl {
     background-color: #b4d0e7;
 }
 
-header li:hover #logo-small,
-#start {}
+footer {
+    background-color: black;
+}
+
 
 /* ----------- */
 /* DEBUG ----- */
+
+.debug footer,
+.debug .container-xl {
+    height: 500px;
+}
+
+.debug main section {
+    height: 500px;
+    border: 1px dashed red;
+}
