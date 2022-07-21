@@ -220,6 +220,12 @@ h1 {
     width: 100%;
 }
 
+.checkmark {
+    color: blue;
+    font-size: 18px;
+    font-weight: 900;
+}
+
 
 /* !!! flex shrink 0 così poi stetch default */
 
