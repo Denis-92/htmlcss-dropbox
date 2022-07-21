@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Dropbox</title>
 </head>
@@ -14,24 +17,66 @@
     <!-- HEADER -->
     <header>
 
-        <!-- BARRA NAVIGAZIONE -->
-        <div class="barra-navigazione">
+        <!-- NAVIGATION -->
+        <nav id="fixed-header" class="flex space-between">
 
-            <img src="img/logo-small.png" alt="Logo Dropbox">
+            <div>
+                <ul class="flex">
+                    <li class="li-button"><a href="#"><img src="img/logo-small.png" alt="Logo Dropbox">
+                        </a></li>
+
+                    <li><a href="#">Perché Dropbox</a></li>
+                    <li><a href="#">Funzioni</a></li>
+                    <li><a href="#">Piani e prezzi</a></li>
+                </ul>
+            </div>
 
 
-        </div>
-        <!-- /BARRA NAVIGAZIONE -->
+
+
+            <div>
+                <ul class="flex">
+                    <li><a href="#">Supporto</a></li>
+                    <li><a href="#">Contatta l'ufficio vendite</a></li>
+                    <li><a href="#">Accedi</a></li>
+                    <li class="li-button"><a class="button button-inline" href="#">Inizia</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <!-- /NAVIGATION -->
 
         <!-- JUMBOTRON -->
-        <div class="container-xl">
+        <div class="container-large">
 
-            <div id="jumbotron"></div>
+            <div id="jumbotron">
 
+                <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
 
+                <div class="flex">
+
+                    <div class="w-30 pt-70px">
+                        <p>
+                            Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso
+                            posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente
+                            e integrato per ottimizzare il flusso di lavoro esistente.
+                        </p>
+                        <a href="#" class="button mt-35px">Inizia la tua prova gratuita</a>
+                        <p class="mt-35px">Annulla in qualsiasi momento</p>
+                        <i class="fas fa-arrow-down pt-70px"></i>
+                    </div>
+
+                    <div class="w-70">
+                        <img src="img/jumbo.png" alt="funzionalità dropbox">
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
         <!-- /JUMBOTRON -->
+
 
 
 
@@ -42,15 +87,317 @@
     <!-- MAIN -->
     <main>
 
-        <section id="buy-product"></section>
+        <section id="price-list" class="pt-70px">
 
-        <section id="find-partner"></section>
+            <div class="container pt-70px">
 
-        <section id="product-description"></section>
+                <h2>Trova il piano business che fa per te</h2>
 
-        <section id="company-feedback"></section>
+                <div class="select-payment">
 
-        <section id="faq"></section>
+                    <input id="monthly-pay" type="radio" name="payment" value="mensile" checked>
+                    <label for="monthly-pay">Fatturazione mensile</label>
+
+                    <input id="year-pay" type="radio" name="payment" value="annuale">
+                    <label for="year-pay">Fatturazione annuale</label>
+
+                </div>
+
+
+                <div class="flex column-container">
+
+                    <!-- COLUMN SINGOLO -->
+                    <div class="column">
+                        <div class="column-header">
+                            <i class="fas fa-user"></i>
+                            Singolo
+                        </div>
+
+                        <div class="column-content">
+                            <h3> Professional </h3>
+
+                            <div class="price">
+                                <p class="euro">&euro; 12.00</p>
+                                /mese
+                            </div>
+
+                            <ul>
+                                <li><i class="fas fa-user"></i><span class="testo-icona">1 utente</span></li>
+
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <span> 5 TB di spazio di archiviazione sicuro</span> </i>
+                                </li>
+
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <span> 5 TB di spazio di archiviazione sicuro</span> </i>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="button w-100">Prova gratis per 30 giorni</a>
+                            <p>Oppure <a href="#">acquista ora</a></p>
+
+                            <hr>
+                            <!-- width su hr -->
+
+                            <h4>Punti salienti del piano</h4>
+
+                            <ul>
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <span> 5 TB di spazio di archiviazione sicuro</span> </i>
+                                </li>
+
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <span> 5 TB di spazio di archiviazione sicuro</span> </i>
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                    <!-- /COLUMN SINGOLO -->
+
+                    <!-- COLUMN TEAM -->
+                    <div class="column">
+                        <div class="column-header">
+                            <i class="fas fa-user"></i>
+                            Team
+                        </div>
+
+                        <div class="column-content">
+                            <h3> Advanced </h3>
+
+                            <div class="price">
+                                <p class="euro">&euro; 18.00</p>
+                                /utente/mese
+                            </div>
+
+                            <ul>
+                                <li><i class="fas fa-user"></i><span class="testo-icona">3 o più utenti</span></li>
+
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <span> Tutto lo spazio di cui ha bisogno il tuo team</span> </i>
+                                </li>
+
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <span> Tutto lo spazio di cui ha bisogno il tuo team</span> </i>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="button w-100">Prova gratis per 30 giorni</a>
+                            <p>Oppure <a href="#">acquista ora</a></p>
+
+                            <hr>
+                            <!-- width su hr -->
+
+                            <h4>Punti salienti del piano</h4>
+
+                            <ul>
+
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <span> Tutto lo spazio di cui ha bisogno il tuo team</span> </i>
+                                </li>
+
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <span> Tutto lo spazio di cui ha bisogno il tuo team</span> </i>
+                                </li>
+
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <span> Tutto lo spazio di cui ha bisogno il tuo team</span> </i>
+                                </li>
+
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <span> Tutto lo spazio di cui ha bisogno il tuo team</span> </i>
+                                </li>
+
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <span> Tutto lo spazio di cui ha bisogno il tuo team</span> </i>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                    <!-- /COLUMN TEAM -->
+
+                    <!-- COLUMN AZIENDA -->
+                    <div class="column">
+                        <div class="column-header">
+                            <i class="fas fa-user"></i>
+                            Enterprise
+                        </div>
+
+                        <div class="column-content">
+                            <h3> Professional </h3>
+
+                            <div class="price">
+                                <p class="euro">Contattaci</p>
+                                -
+                            </div>
+
+                            <ul>
+                                <li><i class="fas fa-user"></i><span class="testo-icona">10 o più utenti</span></li>
+
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <span> Soluzioni personalizzabili per la tua azienda</span> </i>
+                                </li>
+
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <span> Soluzioni personalizzabili per la tua azienda</span> </i>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="button w-100">Prova gratis per 30 giorni</a>
+                            <p>Oppure <a href="#">Contattaci</a></p>
+
+                            <hr>
+                            <!-- width su hr -->
+
+                            <h4>Punti salienti del piano</h4>
+
+                            <ul>
+
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <span> Soluzioni personalizzabili per la tua azienda</span> </i>
+                                </li>
+
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <span> Soluzioni personalizzabili per la tua azienda</span> </i>
+                                </li>
+
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <span> Soluzioni personalizzabili per la tua azienda</span> </i>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                    <!-- /COLUMN AZIENDA -->
+
+                </div>
+
+                <div id="call-to-action">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aliquam eius, quam alias rerum
+                    explicabo, vitae necessitatibus amet quibusdam expedita dolor ut officia quia quis quae nihil
+                    maiores eum porro.
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <section id="find-partner">
+
+            <div class="container"></div>
+
+        </section>
+
+
+        <section id="product-description">
+
+            <div class="container"></div>
+
+            <!-- sempre calc più poi flex wrap -->
+
+        </section>
+
+
+        <section id="company-feedback">
+
+            <div class="container">
+                <h2>titolo</h2>
+            </div>
+
+            <div id="company-blocks">
+
+                <div class="flex wrap">
+
+                    <div class="block-container wrap">
+
+                        <div class="square type-1">
+                            <img src="img/arizona_state_university.svg" alt="hello">
+                        </div>
+                        <div class="square type-2">
+                            <img src="img/arizona_state_university.svg" alt="hello">
+                        </div>
+                        <div class="square type-3">
+                            <img src="img/arizona_state_university.svg" alt="hello">
+                        </div>
+                        <div class="square type-4">
+                            <img src="img/arizona_state_university.svg" alt="hello">
+                        </div>
+
+                    </div>
+
+
+                    <div class="feedback-container">
+                        <img src="img/designit.svg" alt="design it feedback">
+                        <hr>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae ab magnam nihil cupiditate
+                            molestiae veritatis eveniet cum earum et dignissimos. Nulla reprehenderit est laudantium
+                            repudiandae rerum alias quo, ab ipsa!
+                        </p>
+                        <div class="sign">
+                            Pinco pallino, ...
+                        </div>
+                    </div>
+
+
+                    <div class="block-container wrap">
+
+                        <div class="square type-5">
+                            <img src="img/hearst_corp.svg" alt="hello">
+                        </div>
+                        <div class="square type-6">
+                            <img src="img/hearst_corp.svg" alt="hello">
+                        </div>
+                        <div class="square type-7">
+                            <img src="img/hearst_corp.svg" alt="hello">
+                        </div>
+                        <div class="square type-8">
+                            <img src="img/hearst_corp.svg" alt="hello">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="container"></div>
+
+            </div>
+
+        </section>
+
+
+        <section id="faq">
+
+            <div class="container"></div>
+
+        </section>
 
 
     </main>
@@ -59,6 +406,8 @@
 
     <!-- FOOTER -->
     <footer>
+
+        <div class="container-large"></div>
 
 
     </footer>

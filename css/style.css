@@ -8,43 +8,335 @@
 
 body {
     font-family: sans-serif;
-    background-color: white;
+    background-color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+hr {
+    width: 30%;
+}
+
+p {
+    line-height: 1.4rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    /* mettere icona */
+}
+
+
+li a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
 }
 
 
 /* ----- UTILITY ----- */
 
 
+.container-large {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 
-/* Flex */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.w-30 {
+    width: 30%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.pt-70px {
+    padding-top: 70px;
+}
+
+.mt-35px {
+    margin-top: 35px;
+}
+
+/* buttons */
+.button {
+    background-color: #0061ff;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button.button-inline {
+    display: inline;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+/* /buttons */
+
+
+/* flex utilities */
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.column-container {
+    margin-left: -35px;
+    margin-right: -35px;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
 
 
 /* ----- CONTENT ----- */
 
-.barra-navigazione {
+/* header */
+
+header .container-large {
+    padding-top: 200px;
+}
+
+#fixed-header {
     position: fixed;
     width: 100%;
+    background-color: #fff;
+    padding: 0 10px;
+    height: 80px;
+    line-height: 80px;
+    /*si può fare con flex */
+    z-index: 1;
 }
 
-.container-xl {
-    background-color: #b4d0e7;
+#fixed-header img {
+    vertical-align: middle;
 }
 
-footer {
+header li {
+    padding: 0 15px;
+}
+
+header li:not(.li-button):hover {
+    border-bottom: 1px solid black;
+}
+
+h1 {
+    font-size: 75px;
+    font-weight: 800;
+}
+
+
+#jumbotron img {
+    position: relative;
+    top: 70px;
+}
+
+#jumbotron i.fa-arrow-down {
+    font-size: 2.5rem;
+}
+
+/* /header */
+
+/* price-list */
+
+#price-list h2 {
+    margin-bottom: 50px;
+}
+
+
+.column {
+    width: calc(100% / 3 - 70px);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    margin: 35px;
+    font-size: 0.8rem;
+    /* min-height: 500px; */
+    /*nel caso dovesse servire per stretchare */
+}
+
+.column-header {
+    text-align: center;
+    border-bottom: 1px solid #666;
+    padding: 5px;
+}
+
+.column-content {
+    padding: 35px 20px;
+}
+
+.column-content>* {
+    margin-bottom: 35px;
+}
+
+#price-list li {
+    padding: 10px 0;
+}
+
+#price-list .container h2 {
+    font-size: 40px;
+}
+
+#year-pay {
+    margin-left: 20px;
+}
+
+.euro {
+    font-weight: 900;
+}
+
+.testo-icona {
+    padding-left: 5px;
+}
+
+
+/* !!! flex shrink 0 così poi stetch default */
+
+/* /price-list */
+
+
+/* company-feedback */
+
+
+.block-container {
+    display: flex;
+    width: 30vw;
+}
+
+.feedback-container {
+    width: calc(100% - 60vw);
+    background-color: #ccc;
+    padding: 35px;
+    min-height: 30vw;
+}
+
+#company-blocks>.flex {
+    align-items: flex-start;
+}
+
+.feedback-container img {
+    width: 50%;
+
+}
+
+.feedback-container>*:not(.sign) {
+    margin-bottom: 35px;
+}
+
+.square {
+    width: 15vw;
+    height: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 0.5s linear;
+    color: white;
+}
+
+.square img {
+    width: 150px;
+    filter: invert(1);
+}
+
+.square.type-1 {
+    color: rgba(255, 98, 0, 0.777);
+    background-color: orange;
+}
+
+.square.type-2 {
+    color: rgb(109, 255, 47);
+    background-color: greenyellow;
+}
+
+.square.type-3 {
+    background-color: red;
+}
+
+.square.type-4 {
+    background-color: yellow;
+}
+
+.square.type-5 {
+    background-color: aquamarine;
+}
+
+.square.type-6 {
+    background-color: violet;
+}
+
+.square.type-7 {
+    background-color: brown;
+}
+
+.square.type-8 {
     background-color: black;
 }
 
 
-/* ----------- */
-/* DEBUG ----- */
+/* EVENTO */
+.square:hover {
+    border: 10px solid currentColor;
+}
 
-.debug footer,
-.debug .container-xl {
+/* /company-feedback */
+
+
+header,
+#company-blocks {
+    background-color: #b4d0e7;
+}
+
+
+footer {
+    background-color: #000;
+}
+
+/* DEBUG ---------------------------------------- */
+.debug footer {
     height: 500px;
 }
 
-.debug main section {
-    height: 500px;
+
+.debug #find-partner,
+.debug #product-description,
+.debug #company-blocks,
+.debug #faq {
+    min-height: 500px;
     border: 1px dashed red;
+}
+
+.debug .container {
+    /* background-color: orange; */
+}
+
+.debug footer .container-large {
+    min-height: 350px;
+    background-color: orange;
 }
