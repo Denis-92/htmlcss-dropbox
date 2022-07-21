@@ -216,6 +216,10 @@ h1 {
     padding-left: 5px;
 }
 
+#call-to-action-business {
+    width: 100%;
+}
+
 
 /* !!! flex shrink 0 così poi stetch default */
 
