@@ -322,6 +322,42 @@ footer {
     background-color: #000;
 }
 
+
+
+/* FOOTER */
+
+footer {
+    color: white;
+}
+
+.footer-column-header {
+    /*color: white;*/
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.footer-column-content>* {
+    /*color: white;*/
+    font-size: 15px;
+    padding: 10px 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: white;
+}
+
+footer .column {
+    border: 0;
+}
+
+
+/* /FOOTER */
+
 /* DEBUG ---------------------------------------- */
 .debug footer {
     height: 500px;
@@ -342,5 +378,5 @@ footer {
 
 .debug footer .container-large {
     min-height: 350px;
-    background-color: orange;
+    /*background-color: grey;*/
 }
