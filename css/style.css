@@ -185,7 +185,8 @@ h1 {
 .column-header {
     text-align: center;
     border-bottom: 1px solid #666;
-    padding: 5px;
+    padding: 10px 0;
+    font-size: 1rem;
 }
 
 .column-content {
@@ -208,7 +209,7 @@ h1 {
     margin-left: 20px;
 }
 
-.euro {
+.sale {
     font-weight: 900;
 }
 
