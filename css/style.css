@@ -215,10 +215,12 @@ h1 {
 
 .testo-icona {
     padding-left: 5px;
+    font-size: 1rem;
 }
 
 #call-to-action-business {
     width: 100%;
+    margin-left: 0;
 }
 
 .checkmark {
@@ -227,8 +229,9 @@ h1 {
     font-weight: 900;
 }
 
-
-/* !!! flex shrink 0 così poi stetch default */
+#price-list p {
+    font-size: 1rem;
+}
 
 /* /price-list */
 
