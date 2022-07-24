@@ -59,6 +59,18 @@ li a {
     width: 30%;
 }
 
+.w-40 {
+    width: 40%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
 .w-70 {
     width: 70%;
 }
@@ -374,7 +386,6 @@ footer .column {
 }
 
 
-.debug #find-partner,
 .debug #product-description,
 .debug #company-blocks,
 .debug #faq {
