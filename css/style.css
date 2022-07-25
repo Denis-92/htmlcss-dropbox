@@ -453,12 +453,12 @@ footer .column {
 }
 
 
-.debug #product-description,
+/*.debug #product-description,
 .debug #company-blocks,
 .debug #faq {
     min-height: 500px;
     border: 1px dashed red;
-}
+}*/
 
 .debug .container {
     /* background-color: orange; */
