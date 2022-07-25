@@ -262,6 +262,13 @@ h1 {
 
 /* /find partner */
 
+/* product description */
+
+#product-description .column {
+    border: 0;
+}
+
+/* /product description */
 
 /* company-feedback */
 
