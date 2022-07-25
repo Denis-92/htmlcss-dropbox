@@ -266,6 +266,7 @@ h1 {
 
 #product-description .column {
     border: 0;
+    margin-left: 0;
 }
 
 /* /product description */
