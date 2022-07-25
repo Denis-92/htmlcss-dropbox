@@ -247,6 +247,21 @@ h1 {
 
 /* /price-list */
 
+/* find-partner */
+
+.text-find-partner {
+    padding: 40px;
+}
+
+#button-find-partner {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* /find partner */
+
 
 /* company-feedback */
 
