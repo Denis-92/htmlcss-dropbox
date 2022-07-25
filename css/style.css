@@ -87,6 +87,10 @@ li a {
     margin-top: 35px;
 }
 
+.hidden {
+    display: none;
+}
+
 /* buttons */
 .button {
     background-color: #0061ff;
@@ -269,10 +273,17 @@ h1 {
     margin-left: 0;
 }
 
+#product-description h2 {
+    font-size: 2.5rem;
+}
+
 /* /product description */
 
 /* company-feedback */
 
+#company-feedback h2 {
+    font-size: 3rem;
+}
 
 .block-container {
     display: flex;
@@ -355,6 +366,39 @@ h1 {
 }
 
 /* /company-feedback */
+
+/* F.A.Q. */
+
+#faq h2 {
+    font-size: 3rem;
+}
+
+#faq hr {
+    width: 100%;
+    margin: 30px 0;
+}
+
+#faq p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#faq i {
+    padding-right: 4%;
+}
+
+#faq .flex:hover .hidden {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.column-faq {
+    flex-direction: column;
+}
+
+
+/* /F.A.Q. */
 
 
 header,
